@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- my css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center fs-1 mt-5">Welcome to my <span class="fw-bold text-warning">Shop!!</span></h1>
+    </header>
+    <main>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col bg-success text-center p-5 text-white mx-5">
+                    <h3>Total Cash Sales</h3>
+                    <h2>$<span id="cash-total">00</span></h2>
+                </div>
+                <div class="col bg-success text-center p-5 text-white mx-5">
+                    <h3>Total Due Sales</h3>
+                    <h2>$<span id="due-total">00</span></h2>
+                </div>
+                <div class="col bg-success text-center p-5 text-white mx-5">
+                    <h3>Total Sales</h3>
+                    <h2>$<span id="sales-total">00</span></h2>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col bg-warning p-5 mx-5">
+                    <h3>Please enter cash sale amount</h3>
+                    <input type="number" name="" id="cash-input" class="px-2 py-1 w-50 mb-2" placeholder="$cash sale amount"><br>
+                    <button class="btn btn-secondary text-white" id="cash-submit">Submit</button>
+                </div>
+                <div class="col bg-warning p-5 mx-5">
+                    <h3>Please enter due sale amount</h3>
+                    <input type="number" name="" id="due-input" class="px-2 py-1 w-50 mb-2"  placeholder="$due sale amount"><br>
+                    <button class="btn btn-secondary text-white" id="due-submit">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/shop.js"></script>
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
